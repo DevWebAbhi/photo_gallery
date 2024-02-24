@@ -22,7 +22,7 @@ const Navbar = () => {
       }
     }
   return (
-  <div className='navbar' style={{marginTop:selector.bgrmenu?"50px":""}}>
+  <div className='navbar' style={{marginTop:selector.bgrmenu?"45px":""}}>
     <div className='navbar-ele'>
       <div onClick={()=>handleNavigate('/home')}><FontAwesomeIcon icon={faHouseChimney} className='navbar-icon' /> Home</div>
       <div onClick={()=>handleNavigate('/')}><FontAwesomeIcon icon={faPhotoFilm} className='navbar-icon' />Gallery</div>
