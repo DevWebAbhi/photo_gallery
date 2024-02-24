@@ -23,9 +23,7 @@ const randomPrice=Math.round(Math.random() * (5001 - 501)) + 501;
 return {name:realName,price:randomPrice};
   }
 
-  function print(){
-    console.log(selector)
-  }
+ 
 
   useEffect(()=>{
     const obj=data.map((e)=>{
@@ -42,7 +40,6 @@ return {name:realName,price:randomPrice};
         <ImageCard key={idx} data={e.img}  name={e.name} price={e.price}/>
       )):<></>
      }
-     <button onClick={print}></button>
     </div>
   )
 }
