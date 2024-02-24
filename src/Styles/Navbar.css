@@ -1,0 +1,80 @@
+:root{
+    --largewidth:1600px;
+    --color:white;
+  }
+
+.navbar{
+    position: fixed;
+    padding: 0.6rem 1rem;
+    width: 100vw;
+    background-color: rgb(29, 29, 29);
+    top:20px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: start;
+    max-width:var(--largewidth);
+
+}
+
+.hamburger-icon{
+    display: none;
+}
+
+.small-size-ele{
+    display: none;
+}
+
+.navbar-ele{
+    display: flex;
+}
+
+.small-size-ele>div,.navbar-ele>div{
+    color: var(--color);
+    padding: 0.3rem 1rem;
+}
+
+.small-size-ele>div:hover,.navbar-ele>div:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background-color: rgb(58, 58, 58);
+    cursor: pointer;
+}
+
+.navbar-icon{
+    color: var(--color);
+    margin-right: 0.5rem;
+}
+
+.hamberger-icon{
+    padding-top: 0.65rem;
+}
+
+/*----------------------------Media Queries-----------------------*/
+
+@media only screen and (max-width: 500px) {
+    .navbar{
+        justify-content: space-between;
+    }
+
+    .navbar-ele{
+     display: none;
+    }
+
+    .hamburger-icon{
+      display: block;
+    }
+
+    .small-size-ele{
+        display: block;
+    }
+
+    .small-size-ele>div+div{
+        display: none;
+    }
+
+    
+}
+
+
+
+

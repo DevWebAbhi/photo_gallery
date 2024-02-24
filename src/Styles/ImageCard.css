@@ -1,0 +1,24 @@
+.card-main-div{
+    border: 1px solid mintcream;
+    
+    border-radius: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 18.75rem;
+}
+
+.card-main-div>img{
+    width: 18.75rem;
+    height: 18.75rem;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+@media screen and (max-width: 340px) {
+    .card-main-div{
+        width: 14rem;
+    }
+    
+    .card-main-div>img{
+        width: 14rem;
+        height: 14rem;
+    }
+}

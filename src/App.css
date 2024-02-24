@@ -1,0 +1,13 @@
+:root{
+  --largewidth:1600px;
+}
+
+
+.App {
+  max-width:var(--largewidth);
+  margin: auto;
+  margin-top: 50px;
+  padding: 1rem;
+}
+
+
